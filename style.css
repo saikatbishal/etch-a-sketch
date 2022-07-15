@@ -1,0 +1,49 @@
+body {
+    display : grid;
+    justify-content: center;
+    justify-items : center;
+  }
+  .container {
+    width : 600px;
+    height : 600px;
+    border : 1px solid ;
+    display : grid;
+  }
+.hoverEffect{
+    background-color: rgb(207, 207, 207);!important
+  }
+  .clicked-red{
+    background-color: RED;
+  }
+  .clicked-blue{
+    background-color: blue;
+  }
+  .clicked-green{
+    background-color: green;
+  }
+  .clicked-yellow{
+    background-color: rgb(246, 177, 17);
+  }
+  button.red,
+  button.green,
+  button.blue,
+  button.yellow
+  {
+    width : 30px;
+    height : 30px;
+    margin-top: 10px;
+    border : none;
+    
+  }
+  .red{
+    background-color: red;
+  }
+  .green {
+background-color: green;
+  }
+  .blue {
+    background-color: blue;
+  }
+  .yellow{
+    background-color: rgb(246, 177, 17);
+  }
