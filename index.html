@@ -5,18 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+    <script src="app1.js" defer></script>
     <title>Etch A Sketch</title>
 </head>
 <body>
     <h2>Etch a Sketch</h2>
+    <input type="number" name="size" id="size" placeholder="sketchpad size" value="16"  class="size-input" onchange="changeSize(this.value)"/>
     <div class="container">
     </div>
     <div class="button-container">
-        <button class = "red"></button>
-        <button class = "green"></button>
-        <button class = "blue"></button>
-        <button class = "yellow"></button>
+        <button class = "red" onclick="setColor('red')"></button>
+        <button class = "green" onclick="setColor('green')"></button>
+        <button class = "blue" onclick="setColor('blue')"></button>
+        <button class = "yellow" onclick="setColor('yellow')"></button>
+        <button class = "black" onclick="setColor('black')"></button>
+        <button class = "random" onclick="setColor('random')">RANDOM</button>
+    </div>
+    <div class="button-container-two" style=" display: flex;
+    gap : 10px; justify-content: center;"><button class = "erase" onclick="setColor('white')">ERASER</button>
+        <div class="button-container"><button class = "reset" onclick="resetBoard()">RESET</button>
     </div>
     
 </body>
