@@ -19,6 +19,6 @@ This is a vanilla javaScript project idea taken from The Odin Project. The idea 
 * Colored Buttons are implemented at the bottom of the canvas to change color of the brush.
 * Default brush color is black
 * Eraser and Reset buttons are created to erase the colors on the pixels and to reset the whole canvas respectively.
-* Random Button generates random color on each pixel. [Not yet implemented]
+* Random Button generates random color on each pixel.
 * Pixels are only colored when the mouse is on a clicked position. [Not yet implemented]
 * Splash Screen when the site fires up.
