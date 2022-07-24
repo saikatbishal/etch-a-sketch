@@ -21,7 +21,9 @@ function populateBoard(number)
         board.insertAdjacentElement("beforeend", square);
     }
 }
-populateBoard(16);
+let inputSize = document.querySelector(".size-input").value;
+console.log(inputSize);
+populateBoard(inputSize);
 
 document.querySelectorAll(".square").forEach((sq) => {
     sq.addEventListener("click", () => {
@@ -68,7 +70,7 @@ function colorSquare()
     }
 }
 
-var splashScreen = document.querySelector('.splash-screen');
+let splashScreen = document.querySelector('.splash-screen');
 splashScreen.addEventListener('click', () => {
     splashScreen.style.display = 'none';
 })
