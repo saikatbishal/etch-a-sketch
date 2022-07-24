@@ -67,3 +67,8 @@ function colorSquare()
         }
     }
 }
+
+var splashScreen = document.querySelector('.splash-screen');
+splashScreen.addEventListener('click', () => {
+    splashScreen.style.display = 'none';
+})
