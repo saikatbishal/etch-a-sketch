@@ -2,7 +2,9 @@
 
 ## Documentation
 
-This is a vanilla javaScript project idea taken from The Odin Project. The idea is to make a sketch pad on a web page and add as many cool features as possible. 
+This is a vanilla javaScript project idea taken from The Odin Project. The idea is to make a sketch pad on a web page and add as many cool features as possible.
+
+[Deployed app](https://sketch-it-up.vercel.app/https://)
 
 ### Tech Stack
 
