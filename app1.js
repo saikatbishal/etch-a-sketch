@@ -56,3 +56,9 @@ function resetBoard()
     let squares = document.querySelectorAll('.square');
     squares.forEach((square) => square.style.backgroundColor =`white`)
 }
+
+/*
+
+TO DO :
+
+*/
