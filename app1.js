@@ -1,4 +1,6 @@
 let color = `black`;
+let clicked = true;
+
 function populateBoard(number)
 {
     let board = document.querySelector('.container');
@@ -11,16 +13,25 @@ function populateBoard(number)
     for (let i = 0; i < amount; i++) {
         let square = document.createElement('div');
         square.classList.add('square');
-        square.addEventListener('mouseover', () => square.style.backgroundColor = `${color}`);
+        if (clicked === true) {
+            square.addEventListener('mouseover', colorSquare);
+        }
         square.style.backgroundColor = `white`;
         square.style.border = "1px solid rgba(220,220,220,0.5)";
         board.insertAdjacentElement("beforeend", square);
     }
 }
 populateBoard(16);
+
+document.querySelectorAll(".square").forEach((sq) => {
+    sq.addEventListener("click", () => {
+        console.log("square clicked");
+        clicked = !clicked;
+})
+})
+
 function changeSize(input)
 {
-    // let input = document.querySelector(".size-input").value;
     if (input > 2 && input <= 500)
     {
         populateBoard(input);
@@ -28,37 +39,31 @@ function changeSize(input)
     else {
         console.log("Please select between 2 and 500");
     }
-}
+} 
+
+
 function setColor(choice)
 {
     color = choice;
 }
-function colorSquares()
-{
-    if (click)
-    {
-    if (color === "random")
-    {
-        this.style.backgroundColor = `hsl(${Math.random() * 360}%,100%,50%)`;
-
-        }
-    else {
-        this.style.backgroundColor = color;
-        }
-}
-}
-colorSquares();
 
 
 function resetBoard()
 {
     let board = document.querySelector('.container');
-    let squares = document.querySelectorAll('.square');
+    let squares = board.querySelectorAll('.square');
     squares.forEach((square) => square.style.backgroundColor =`white`)
 }
 
-/*
-
-TO DO :
-
-*/
+function colorSquare()
+{
+    if (clicked){
+        if (color === "random")
+        {
+        this.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        }
+        else {
+            this.style.backgroundColor = color;
+        }
+    }
+}

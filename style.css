@@ -44,6 +44,13 @@ background-color: green;
     padding: 10px;
 
   }
+  .random {
+    background: linear-gradient( to bottom right, rgba(248, 45, 45,0.8), rgb(255, 255, 58,0.8), rgb(24, 183, 24,0.8), rgb(67, 67, 255,0.8));
+    color : white;
+    border : none;
+    height : 30px;
+    width: 30px;
+  }
 
   input {
     margin-bottom: 10px;
