@@ -98,3 +98,13 @@ background-color: green;
   .hidden {
     display : none;
   }
+  .download-image,.show-image {
+    background-color: red;
+    border: none;
+    padding : 10px;
+    color : white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }

@@ -30,10 +30,10 @@
     <button class = "erase" onclick="setColor('white')">ERASER</button>
     <button class = "reset" onclick="resetBoard()">RESET</button>
     </div>
-    <button onclick="showImage()">Show Image</button>
+    <button onclick="showImage()" class = "show-image">Show Image</button>
     <div class="image-show">
     </div>
-    <button class="download-image hidden">Download Image</button>
+    <button class="download-image hidden" onclick="createSaveBtn()">Download Image</button>
     <script>
         function showImage() {
             let showImg = document.querySelector('.image-show');
