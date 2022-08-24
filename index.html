@@ -32,16 +32,18 @@
     </div>
     <button onclick="showImage()">Show Image</button>
     <div class="image-show">
-
     </div>
+    <button class="download-image hidden">Download Image</button>
     <script>
         function showImage() {
             let showImg = document.querySelector('.image-show');
+            setTimeout(()=>{
+                document.querySelector('.download-image').style.display = 'block';
+            },1000);
             showImg.innerHTML = '';
             let board = document.querySelector('.container');
             console.log(board);
             html2canvas(board).then((canvas)=>{
-                
                 showImg.appendChild(canvas);
             })
         }
