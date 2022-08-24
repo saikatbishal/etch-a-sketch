@@ -84,7 +84,7 @@ splashScreen.addEventListener('click', () => {
 })
 
 
-// SAVE IMAHE DRAWN BY THE USER -- NOT WORKING 
+// SAVE IMAGE DRAWN BY THE USER -- NOT WORKING 
 const saveImage = () => {
     const canvas = document.createElement('canvas');
     console.log(canvas);
