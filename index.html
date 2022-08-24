@@ -14,7 +14,7 @@
         <h3>Click to Start</h3>
     </div>
     
-    <input type="number" name="size" id="size" placeholder="sketchpad size" value="16"  class="size-input" onchange="changeSize(this.value)"/>
+    <input type="number" name="size" id="size" placeholder="sketchpad size" value="30"  class="size-input" onchange="changeSize(this.value)"/>
     <div class="container">
     </div>
     <div class="button-container">
@@ -22,13 +22,13 @@
         <button class = "red" onclick="setColor('red')"></button>
         <button class = "green" onclick="setColor('green')"></button>
         <button class = "blue" onclick="setColor('blue')"></button>
-        <button class = "yellow" onclick="setColor('yellow')"></button>
+        <button class = "yellow" onclick="setColor('rgb(246, 177, 17)')"></button>
         <button class = "random" onclick="setColor('random')"></button>
     </div>
     <div class="button-container-two">
     <button class = "erase" onclick="setColor('white')">ERASER</button>
     <button class = "reset" onclick="resetBoard()">RESET</button>
     </div>
-    
+    <button onclick="saveImage()">Save Image</button>
 </body>
 </html>

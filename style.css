@@ -35,7 +35,7 @@ background-color: green;
     background-color: rgb(246, 177, 17);
   }
   .black{
-    background-color: #000;
+    background-color: rgb(54, 54, 54);
   }
   .erase,
   .reset{
@@ -46,6 +46,8 @@ background-color: green;
   }
   .button-container-two{
     display: flex;
+    gap : 10px;
+    margin-bottom : 10px;
     justify-content: center;
   }
   .random {
@@ -72,6 +74,7 @@ background-color: green;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   .splash-screen>h2{
     font-size: 60px;
@@ -81,4 +84,7 @@ background-color: green;
   h3 {
     font-family :Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 200;
+  }
+  button:hover{
+    border : 3px solid rgb(113, 113, 113)
   }
