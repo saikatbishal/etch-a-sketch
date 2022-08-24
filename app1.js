@@ -85,12 +85,12 @@ splashScreen.addEventListener('click', () => {
 
 
 // SAVE IMAGE DRAWN BY THE USER -- NOT WORKING 
-const saveImage = () => {
-    const canvas = document.createElement('canvas');
-    console.log(canvas);
-    const ctx = canvas.getContext('2d');
-    console.log(ctx);
-    canvas.width = canvas.height = `500px`;
-    // ctx.drawImage(board, 0, 0, canvas.width, canvas.height);
-    document.body.appendChild(canvas);
-}
+// const saveImage = () => {
+//     const canvas = document.createElement('canvas');
+//     console.log(canvas);
+//     const ctx = canvas.getContext('2d');
+//     console.log(ctx);
+//     canvas.width = canvas.height = `500px`;
+//     // ctx.drawImage(board, 0, 0, canvas.width, canvas.height);
+//     document.body.appendChild(canvas);
+// }

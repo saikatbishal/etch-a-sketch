@@ -88,3 +88,10 @@ background-color: green;
   button:hover{
     border : 3px solid rgb(113, 113, 113)
   }
+  .image-show {
+    padding : 20px;
+  }
+  canvas {
+    width : 100px;
+    height : 100px;
+  }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="app1.js" defer></script>
+    <script src="html2canvas.js"></script>
     <title>Etch A Sketch</title>
 </head>
 <body>
@@ -29,6 +30,21 @@
     <button class = "erase" onclick="setColor('white')">ERASER</button>
     <button class = "reset" onclick="resetBoard()">RESET</button>
     </div>
-    <button onclick="saveImage()">Save Image</button>
+    <button onclick="showImage()">Show Image</button>
+    <div class="image-show">
+
+    </div>
+    <script>
+        function showImage() {
+            let showImg = document.querySelector('.image-show');
+            showImg.innerHTML = '';
+            let board = document.querySelector('.container');
+            console.log(board);
+            html2canvas(board).then((canvas)=>{
+                
+                showImg.appendChild(canvas);
+            })
+        }
+    </script>
 </body>
 </html>
