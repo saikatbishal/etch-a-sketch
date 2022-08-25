@@ -27,7 +27,7 @@ populateBoard(inputSize);
 
 document.querySelectorAll(".square").forEach((sq) => {
     sq.addEventListener("click", () => {
-        console.log("square clicked"+clicked);
+        // console.log("square clicked"+clicked);
         clicked = !clicked;
 })
 })
@@ -41,7 +41,7 @@ function changeSize(input)
         populateBoard(input);
     }
     else {
-        console.log("Please select between 2 and 500");
+        alert("Please select between 2 and 500");
     }
 } 
 
@@ -82,18 +82,15 @@ let splashScreen = document.querySelector('.splash-screen');
 splashScreen.addEventListener('click', () => {
     splashScreen.style.display = 'none';
 })
-
-
 createSaveBtn = () => {
-    const saveBtn = document.querySelector('.download-image');
-    const link = document.createElement('a');
-    link.download = "image.png";
-    saveBtn.appendChild(link);
-    const imgShow = document.querySelector('.image-show');
-    // console.log(imgShow);
-    const saveUrl = imgShow.querySelector('canvas').toDataURL("image/png");
-    // link.href = saveUrl;
-    link.setAttribute('href', saveUrl);
-    link.click();
 
+    // const saveBtn = document.querySelector('.download-image');
+    const link = document.createElement('a');
+    link.id = 'save-link'
+    link.download = "imag.png";
+    const imgShow = document.querySelector('.image-show');
+    const saveUrl = imgShow.querySelector('canvas').toDataURL("image/png");
+    link.setAttribute('href', saveUrl);
+    console.log(link);
+    link.click();
 }
